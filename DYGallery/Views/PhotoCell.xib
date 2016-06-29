@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PhotoCell" id="ELz-1E-sxf" customClass="PhotoCell" customModule="DYGallery" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="566" height="353"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="566" height="353"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" maximumZoomScale="4" translatesAutoresizingMaskIntoConstraints="NO" id="jhe-X8-WSC">
+                        <rect key="frame" x="0.0" y="0.0" width="566" height="353"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="sV8-N4-PBT">
+                                <rect key="frame" x="0.0" y="0.0" width="566" height="353"/>
+                            </imageView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="sV8-N4-PBT" firstAttribute="top" secondItem="jhe-X8-WSC" secondAttribute="top" id="9gk-L8-3aE"/>
+                            <constraint firstItem="sV8-N4-PBT" firstAttribute="leading" secondItem="jhe-X8-WSC" secondAttribute="leading" id="lgb-gx-Frf"/>
+                            <constraint firstAttribute="trailing" secondItem="sV8-N4-PBT" secondAttribute="trailing" id="pOh-DN-M43"/>
+                            <constraint firstAttribute="bottom" secondItem="sV8-N4-PBT" secondAttribute="bottom" id="rbk-Hp-Hkh"/>
+                        </constraints>
+                        <connections>
+                            <outlet property="delegate" destination="ELz-1E-sxf" id="uJk-lL-ZPq"/>
+                        </connections>
+                    </scrollView>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="jhe-X8-WSC" firstAttribute="top" secondItem="ELz-1E-sxf" secondAttribute="top" id="5dy-CH-lsK"/>
+                <constraint firstItem="sV8-N4-PBT" firstAttribute="width" secondItem="ELz-1E-sxf" secondAttribute="width" id="Jcm-QP-UAG"/>
+                <constraint firstAttribute="trailing" secondItem="jhe-X8-WSC" secondAttribute="trailing" id="SYZ-sE-sNx"/>
+                <constraint firstItem="sV8-N4-PBT" firstAttribute="height" secondItem="ELz-1E-sxf" secondAttribute="height" id="T2I-xG-wge"/>
+                <constraint firstItem="sV8-N4-PBT" firstAttribute="width" secondItem="ELz-1E-sxf" secondAttribute="width" id="TxJ-tI-cHe"/>
+                <constraint firstItem="jhe-X8-WSC" firstAttribute="leading" secondItem="ELz-1E-sxf" secondAttribute="leading" id="ge0-4a-Lke"/>
+                <constraint firstAttribute="bottom" secondItem="jhe-X8-WSC" secondAttribute="bottom" id="hbF-UC-AU3"/>
+                <constraint firstItem="sV8-N4-PBT" firstAttribute="height" secondItem="ELz-1E-sxf" secondAttribute="height" id="uwo-me-md0"/>
+            </constraints>
+            <size key="customSize" width="566" height="353"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="uwo-me-md0"/>
+                    <exclude reference="TxJ-tI-cHe"/>
+                </mask>
+            </variation>
+            <connections>
+                <outlet property="imageView" destination="sV8-N4-PBT" id="fft-6I-Ejm"/>
+                <outlet property="scrollView" destination="jhe-X8-WSC" id="IlE-7d-opU"/>
+            </connections>
+            <point key="canvasLocation" x="345" y="286.5"/>
+        </collectionViewCell>
+    </objects>
+</document>

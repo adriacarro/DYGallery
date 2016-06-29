@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="GridCell" id="gTV-IL-0wX" customClass="GridCell" customModule="DYGallery" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ejo-r6-LaC">
+                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                    </imageView>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <constraints>
+                <constraint firstItem="ejo-r6-LaC" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="1WM-Ru-3bK"/>
+                <constraint firstItem="ejo-r6-LaC" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="3j9-RG-X6T"/>
+                <constraint firstAttribute="trailing" secondItem="ejo-r6-LaC" secondAttribute="trailing" id="Cq5-dY-QgI"/>
+                <constraint firstAttribute="bottom" secondItem="ejo-r6-LaC" secondAttribute="bottom" id="SO3-2l-oAt"/>
+            </constraints>
+            <connections>
+                <outlet property="imageView" destination="ejo-r6-LaC" id="uYU-tN-XB8"/>
+            </connections>
+        </collectionViewCell>
+    </objects>
+</document>
